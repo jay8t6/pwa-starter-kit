@@ -14,6 +14,7 @@
     "build:rollup": "rollup --config rollup.config.js",
     "serve:prpl-server": "prpl-server --root server/build",
     "serve:static": "polymer serve --port 5000 build/es5-bundled",
+    "serve:rollup": "serve rollup_dist",
     "test": "npm run test:unit && npm run test:integration",
     "test:integration": "mocha test/integration --timeout=10000",
     "test:unit": "polymer test --module-resolution=node --npm",
@@ -44,6 +45,7 @@
     "puppeteer": "^1.4.0",
     "rollup": "^0.59.4",
     "rollup-plugin-node-resolve": "^3.3.0",
+    "serve": "^10.0.1",
     "wct-browser-legacy": "^1.0.1"
   }
 }
